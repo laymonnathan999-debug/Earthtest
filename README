@@ -25,3 +25,48 @@ Full protocol, decision rules, null models, and selection-effect controls are in
 ---
 
 ### Project Structure (planned)
+Earthtest/
+│
+├── README.md
+├── Protocol.md
+├── LICENSE
+├── CITATION.cff
+│
+├── preregistration/
+│   ├── hypothesis.md
+│   ├── decision_rules.yaml
+│   ├── dataset_manifest.csv
+│   └── preregistration_hash.txt
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── metadata/
+│
+├── src/
+│   ├── chronology.py
+│   ├── insolation.py
+│   ├── preprocessing.py
+│   ├── cross_correlation.py
+│   ├── conditional_test.py
+│   └── statistics.py
+│
+├── calibration/
+│   ├── generate_synthetic.py
+│   ├── blinded_tests.py
+│   └── calibration_report.py
+│
+├── tests/
+│   ├── test_time_direction.py
+│   ├── test_chronology.py
+│   ├── test_filter_phase.py
+│   └── test_statistics.py
+│
+├── notebooks/
+│
+├── results/
+│
+└── docs/
+    ├── methodology.md
+    ├── chronology_audit.md
+    └── limitations.md
